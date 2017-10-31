@@ -1,0 +1,47 @@
+/*
+ * docifier
+ * auto-documentation library
+ * ( this will be pulled out of the iotaa project and into a standalone project in time )
+ * by andy monis
+ * 2017
+ */
+.is-320, .is-480, .is-640, .is-800, .is-960, .is-full {
+    background-color: #eee;
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHUlEQVQYV2NkwAIY8QqeOXPmv4mJCVgRfpXIxgAA0TAEBs593zYAAAAASUVORK5CYII=) repeat;
+    border: 1px solid #eee;
+    margin: 10px;
+}
+
+.is-320 { width:320px; }
+.is-480 { width:480px; }
+.is-640 { width:640px; }
+.is-800 { width:800px; }
+.is-960 { width:960px; }
+.is-full { width:100%; margin: 0px; }
+
+.is-code {
+    background: #eee;
+    font-family: monospace;
+    font-size: 12px;
+    padding: 5px;
+}
+
+#docr-controls > div {
+    display: flex;
+    justify-content: center;
+}
+
+#docr-controlled-width {
+    align-self: center;
+}
+
+.docr-h1, .docr-h2, .docr-h3, .docr-p {
+    padding: 5px;
+    text-align: center;
+}
+
+body {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+}
