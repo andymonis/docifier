@@ -89,6 +89,6 @@
     window.addEventListener( 'load', init, true );
     window.addEventListener('resize', () => {
         // refresh the page to re layout the page for device ( i.e. emulating between desktop / mobile )
-        window.location.href = ".";
+        window.location.href = window.location.href;
     }, true);
 })()

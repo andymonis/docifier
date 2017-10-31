@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Stencil</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="HandheldFriendly" content="true" >
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+        <link rel="stylesheet" href="../docifier.css">
+        <script src="../docifier.js"></script>
+
+        <script>
+            /**
+             * ### docifier.after
+             * Runs after the docifier library has loaded.
+             * docEl grabs the HTML used to build the item for auto-documentation
+             */
+            docifier.after = () => {
+                docifier.docEl( '#text > *:nth-child(1)', '#text' );
+                docifier.docEl( '#text > *:nth-child(2)', '#text' );
+                docifier.docEl( '#text > *:nth-child(3)', '#text' );
+                docifier.docEl( '#text > *:nth-child(4)', '#text' );
+                docifier.docEl( '#list > *:nth-child(1)', '#list' );
+            };
+        </script>
+
+        <style>
+            /*
+                Client specific styles for components etc. 
+            */
+            .list-item {
+                align-items: center;
+                background-color: white;
+                border: 1px solid #eee;
+                border-radius: 5px;
+                display: flex;
+            }
+
+            .list-item > * { 
+                margin: 5px;
+            }
+
+            .list-item img {
+                width: 32px;
+                height: 32px;
+            }
+
+            .list-item p {
+                flex-grow: 1; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="docifier-h1">DOCIFIER Test Harness</h1>
+        <p class="docifier-p">
+            An example of a HTML page using DOCIFIER to document the HTML / CSS used to generate the styles. 
+            This is intended to allow a UI stencil to be created and maintained for a client and provide
+            auto updated HTML snippets that can be used. 
+        </p>
+        <div id="docifier-controls">
+            <!-- Required for docifier controls to be added -->
+        </div>
+        <div id="docifier-controlled-width">
+
+            <!--
+                TEXT
+            -->
+            <h2  class="docifier-h2">Text</h2>
+            <p  class="docifier-p">Basic text formatting ( headings and paragraphs etc )</p>
+            <div id="text">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <p>
+                    This is a regular paragraph with formating for the iotaa project,
+                    this should wrap around with some sensible line spacing.
+                </p>
+            </div>
+
+            <h2  class="docifier-h2">List</h2>
+            <p  class="docifier-p">basic list items</p>
+            <div id="list">
+                <div class="list-item">
+                    <img src="icon01.png"></img>
+                    <p>some option</p>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="docifier-p">copyright  @2017</p>
+
+    </body>
+</html>

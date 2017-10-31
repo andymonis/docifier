@@ -26,16 +26,16 @@
     padding: 5px;
 }
 
-#docr-controls > div {
+#docifier-controls > div {
     display: flex;
     justify-content: center;
 }
 
-#docr-controlled-width {
+#docifier-controlled-width {
     align-self: center;
 }
 
-.docr-h1, .docr-h2, .docr-h3, .docr-p {
+.docifier-h1, .docifier-h2, .docifier-h3, .docifier-p {
     padding: 5px;
     text-align: center;
 }
