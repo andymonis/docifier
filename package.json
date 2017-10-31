@@ -1,0 +1,24 @@
+{
+  "name": "docifier",
+  "version": "0.0.1",
+  "description": "Simple HTML & JS documentation library for creating live documentation. Useful for styling client projects.",
+  "main": "docifier.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andymonis/docifier.git"
+  },
+  "keywords": [
+    "documentation",
+    "html",
+    "live"
+  ],
+  "author": "Andy Monis",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/andymonis/docifier/issues"
+  },
+  "homepage": "https://github.com/andymonis/docifier#readme"
+}
