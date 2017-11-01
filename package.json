@@ -1,11 +1,11 @@
 {
   "name": "docifier",
-  "version": "0.0.3",
+  "version": "1.0.4",
   "description": "Simple HTML & JS documentation library for creating live documentation. Useful for styling client projects.",
   "main": "docifier.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm version patch && gulp default",
+    "build": "npm --no-git-tag-version version patch && gulp default",
     "release": "npm run build",
     "watch": "gulp watch"
   },
